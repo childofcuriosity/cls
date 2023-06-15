@@ -7,10 +7,10 @@
 
 其中， 
 
-\_2\_train_base.py是最优方案，欲运行_2_train_base.py的最优配置：
+\_2\_train_base.py是最优方案（在验证集的F1 0.52），欲运行_2_train_base.py的最优配置：
  ```python _2_train_base.py --model=models.densenet169 --dropout=0.2 --lr=0.0001```
 
-\_2_train_densenet_q2l.py是接近最优方案，较复杂，欲运行_2_train_base.py的最优配置：
+\_2_train_densenet_q2l.py也是最优方案（在验证集的F1 0.52），较复杂因此没用 ，欲运行_2_train_base.py的最优配置：
  ```python _2_train_densenet_q2l.py --model=models.densenet169 --dropout=0.2 --lr=0.0001```
 
 \_2_train_densenet_attention_q2l.py是“densenet+对标签和特征进行注意力机制+AsymmetricLoss”的次优的复杂方案（在验证集的F1是0.47），欲运行_2_train_densenet_attention_q2l.py：
